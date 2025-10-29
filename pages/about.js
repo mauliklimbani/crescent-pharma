@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Award, Globe, TrendingUp, CheckCircle, Target } from "lucide-react";
+import { Users, Award, Globe, TrendingUp, CheckCircle, Target, Shield } from "lucide-react";
 import Layout from "@/components/Layout";
 
 export default function AboutPage() {
@@ -219,6 +219,50 @@ export default function AboutPage() {
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
                       <p className="text-gray-600">{value.description}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Leadership Team */}
+        <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50" id="team">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Leadership Team</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Meet the leaders guiding Crescent Pharma&apos;s vision and growth.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                { name: "Smit", role: "Director" },
+                { name: "Vandit Khambhadiya", role: "Director" },
+                { name: "Dhruvik", role: "Director" }
+              ].map((leader, index) => (
+                <motion.div
+                  key={leader.name}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <CardContent className="p-8 text-center">
+                      <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center">
+                        <Users className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">{leader.name}</h3>
+                      <p className="text-blue-600 font-semibold">{leader.role}</p>
                     </CardContent>
                   </Card>
                 </motion.div>

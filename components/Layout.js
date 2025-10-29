@@ -46,7 +46,6 @@ const navigation = [
     ]
   },
   { name: "Careers", href: createPageUrl("Careers") },
-  { name: "News", href: createPageUrl("News") },
   { name: "Contact", href: createPageUrl("Contact") }
 ];
 
@@ -145,7 +144,7 @@ export default function Layout({ children, currentPageName }) {
               className="lg:hidden p-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? <X className="w-6 h-6 text-gray-600" /> : <Menu className="w-6 h-6 text-gray-600" />}
             </button>
           </div>
         </div>
@@ -291,6 +290,17 @@ export default function Layout({ children, currentPageName }) {
                 Quality Policy
               </a>
             </div>
+          </div>
+          <div className="mt-4 text-center text-gray-400 text-sm font-medium text-white">
+            Developed by:{" "}
+            <a
+              href="https://www.linkedin.com/in/maulik-limbani/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              maulik limbani
+            </a>
           </div>
         </div>
       </footer>
