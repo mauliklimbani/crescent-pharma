@@ -16,15 +16,15 @@ export const createPageUrl = (pageName) => {
 
 export const getPageTitle = (pageName) => {
   const titles = {
-    'Home': 'Crescent Pharma - APIs & Intermediates',
-    'About': 'About Us - Crescent Pharma',
-    'Products': 'Products - Crescent Pharma',
-    'Manufacturing': 'Manufacturing Capabilities - Crescent Pharma',
-    'Research': 'Research & Development - Crescent Pharma',
-    'Contact': 'Contact Us - Crescent Pharma',
-    'News': 'Latest News - Crescent Pharma',
-    'Careers': 'Careers - Crescent Pharma'
+    'Home': 'Vubrix Pharma - APIs & Intermediates',
+    'About': 'About Us - Vubrix Pharma',
+    'Products': 'Products - Vubrix Pharma',
+    'Manufacturing': 'Manufacturing Capabilities - Vubrix Pharma',
+    'Research': 'Research & Development - Vubrix Pharma',
+    'Contact': 'Contact Us - Vubrix Pharma',
+    'News': 'Latest News - Vubrix Pharma',
+    'Careers': 'Careers - Vubrix Pharma'
   };
   
-  return titles[pageName] || 'Crescent Pharma';
+  return titles[pageName] || 'Vubrix Pharma';
 };

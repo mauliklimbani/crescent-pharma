@@ -61,8 +61,8 @@ export default function CareersPage() {
   return (
     <Layout currentPageName="Careers">
       <Head>
-        <title>Crescent Pharma Careers</title>
-        <meta name="description" content="Join Crescent Pharma to advance global health with world-class APIs and intermediates." />
+        <title>Vubrix Pharma Careers</title>
+        <meta name="description" content="Join Vubrix Pharma to advance global health with world-class APIs and intermediates." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
@@ -93,7 +93,7 @@ export default function CareersPage() {
               </a>
               <a href="#culture">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-700">
-                  Life at Crescent
+                  Life at Vubrix Pharma
                 </Button>
               </a>
             </div>
@@ -155,7 +155,7 @@ export default function CareersPage() {
               viewport={{ once: true }}
             >
               <Badge className="bg-blue-100 text-blue-700 border-blue-200 mb-3">Culture</Badge>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Life at Crescent</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Life at Vubrix Pharma</h2>
               <p className="text-gray-600 mb-6">
                 We’re scientists, engineers, and operators united by a mission to improve
                 patient outcomes. We celebrate curiosity, craftsmanship, and collaboration.
@@ -235,7 +235,7 @@ export default function CareersPage() {
           </div>
 
           <div id="apply" className="mt-10 text-center">
-            <p className="text-gray-700 mb-4">Prefer email? Send your CV to <a className="text-blue-600 underline" href="mailto:careers@crescentpharma.com">careers@crescentpharma.com</a></p>
+            <p className="text-gray-700 mb-4">Prefer email? Send your CV to <a className="text-blue-600 underline" href="mailto:support@vubrixpharma.com">support@vubrixpharma.com</a></p>
             <Link href={createPageUrl("Contact")}>
               <Button variant="outline">Contact HR</Button>
             </Link>

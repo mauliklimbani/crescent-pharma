@@ -48,7 +48,7 @@ export default function WhyChooseUs() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Why Choose Crescent Pharma?
+            Why Choose Vubrix Pharma?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our commitment to excellence, innovation, and customer satisfaction 

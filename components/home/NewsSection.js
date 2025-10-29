@@ -10,7 +10,7 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 
 const news = [
   {
-    title: "Crescent Pharma Receives FDA Approval for New API Manufacturing Facility",
+    title: "Vubrix Pharma Receives FDA Approval for New API Manufacturing Facility",
     excerpt: "Our state-of-the-art facility in New Jersey has received FDA approval, expanding our manufacturing capacity by 40%.",
     date: "March 15, 2024",
     author: "Press Release",

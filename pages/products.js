@@ -86,7 +86,7 @@ export default function ProductsPage() {
   return (
     <Layout>
       <Head>
-        <title>Products - Crescent Pharma</title>
+        <title>Products - Vubrix Pharma</title>
         <meta name="description" content="Discover our premium range of APIs and intermediates, manufactured to the highest pharmaceutical standards and trusted worldwide." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

@@ -35,8 +35,8 @@ export default function ContactPage() {
   return (
     <Layout>
       <Head>
-        <title>Contact Us - Crescent Pharma</title>
-        <meta name="description" content="Get in touch with Crescent Pharma. Our team is ready to discuss your API and intermediate requirements." />
+        <title>Contact Us - Vubrix Pharma</title>
+        <meta name="description" content="Get in touch with Vubrix Pharma. Our team is ready to discuss your API and intermediate requirements." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -98,8 +98,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Email</h3>
-                      <p className="text-gray-600">info@crescentpharma.com</p>
-                      <p className="text-gray-600">sales@crescentpharma.com</p>
+                      <p className="text-gray-600">support@vubrixpharma.com</p>
                     </div>
                   </div>
 

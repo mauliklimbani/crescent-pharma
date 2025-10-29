@@ -11,8 +11,8 @@ export default function AboutPage() {
   return (
     <Layout>
       <Head>
-        <title>About Us - Crescent Pharma</title>
-        <meta name="description" content="Learn about Crescent Pharma's 25+ years of excellence in API and intermediate manufacturing, serving the global pharmaceutical industry." />
+        <title>About Us - Vubrix Pharma</title>
+        <meta name="description" content="Learn about Vubrix Pharma's 25+ years of excellence in API and intermediate manufacturing, serving the global pharmaceutical industry." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -27,7 +27,7 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}
               className="text-center"
             >
-              <Badge className="bg-blue-100 text-blue-800 mb-6">About Crescent Pharma</Badge>
+              <Badge className="bg-blue-100 text-blue-800 mb-6">About Vubrix Pharma</Badge>
               <h1 className="text-5xl font-bold text-gray-900 mb-6">
                 Leading the Future of 
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
@@ -35,7 +35,7 @@ export default function AboutPage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                For over 25 years, Crescent Pharma has been at the forefront of API and intermediate manufacturing, 
+                For over 25 years, Vubrix Pharma has been at the forefront of API and intermediate manufacturing, 
                 serving the global pharmaceutical industry with unwavering commitment to quality and innovation.
               </p>
             </motion.div>
@@ -55,7 +55,7 @@ export default function AboutPage() {
                 <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
                 <div className="space-y-6 text-gray-600">
                   <p>
-                    Founded in 1995 by a team of visionary chemists and entrepreneurs, Crescent Pharma 
+                    Founded in 1995 by a team of visionary chemists and entrepreneurs, Vubrix Pharma 
                     began as a small research facility with a big dream: to make high-quality pharmaceutical 
                     ingredients accessible to companies worldwide.
                   </p>
@@ -239,7 +239,7 @@ export default function AboutPage() {
             >
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Leadership Team</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Meet the leaders guiding Crescent Pharma&apos;s vision and growth.
+                Meet the leaders guiding Vubrix Pharma&apos;s vision and growth.
               </p>
             </motion.div>
 

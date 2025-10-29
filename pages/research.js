@@ -63,8 +63,8 @@ export default function ResearchPage() {
   return (
     <Layout>
       <Head>
-        <title>Research & Development - Crescent Pharma</title>
-        <meta name="description" content="Explore Crescent Pharma's cutting-edge research and development initiatives in pharmaceutical manufacturing and process innovation." />
+        <title>Research & Development - Vubrix Pharma</title>
+        <meta name="description" content="Explore Vubrix Pharma's cutting-edge research and development initiatives in pharmaceutical manufacturing and process innovation." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

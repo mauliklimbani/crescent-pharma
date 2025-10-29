@@ -86,7 +86,7 @@ export default function Layout({ children, currentPageName }) {
                   <span className="text-white font-bold text-xl">C</span>
                 </div>
                 <div>
-                  <h1 className="text-xl font-bold text-gray-900">Crescent Pharma</h1>
+                  <h1 className="text-xl font-bold text-gray-900">Vubrix Pharma</h1>
                   <p className="text-xs text-blue-600 font-medium">APIs & Intermediates</p>
                 </div>
               </motion.div>
@@ -213,7 +213,7 @@ export default function Layout({ children, currentPageName }) {
                   <span className="text-white font-bold text-xl">C</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Crescent Pharma</h3>
+                  <h3 className="text-xl font-bold">Vubrix Pharma</h3>
                   <p className="text-blue-400 text-sm font-medium">APIs & Intermediates</p>
                 </div>
               </div>
@@ -261,7 +261,7 @@ export default function Layout({ children, currentPageName }) {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-blue-400" />
-                  <span className="text-gray-300">info@crescentpharma.com</span>
+                  <span className="text-gray-300">support@vubrixpharma.com</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 text-blue-400 mt-1" />
@@ -277,7 +277,7 @@ export default function Layout({ children, currentPageName }) {
           {/* Bottom Bar */}
           <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Crescent Pharma. All rights reserved.
+              © 2024 Vubrix Pharma. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">

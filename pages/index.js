@@ -31,7 +31,7 @@ export default function HomePage() {
   return (
     <Layout>
       <Head>
-        <title>Crescent Pharma - APIs & Intermediates</title>
+        <title>Vubrix Pharma - APIs & Intermediates</title>
         <meta name="description" content="Leading manufacturer of high-quality Active Pharmaceutical Ingredients and Intermediates, serving the global pharmaceutical industry with innovation and excellence." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

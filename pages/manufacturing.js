@@ -57,8 +57,8 @@ export default function ManufacturingPage() {
   return (
     <Layout>
       <Head>
-        <title>Manufacturing Capabilities - Crescent Pharma</title>
-        <meta name="description" content="Explore Crescent Pharma's state-of-the-art manufacturing capabilities, GMP-certified facilities, and quality assurance processes." />
+        <title>Manufacturing Capabilities - Vubrix Pharma</title>
+        <meta name="description" content="Explore Vubrix Pharma's state-of-the-art manufacturing capabilities, GMP-certified facilities, and quality assurance processes." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
