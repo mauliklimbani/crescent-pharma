@@ -38,7 +38,7 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-[#e6eaf0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -70,7 +70,7 @@ export default function WhyChooseUs() {
                   <motion.div
                     whileHover={{ scale: 1.1, rotate: 10 }}
                     transition={{ duration: 0.2 }}
-                    className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center"
+                    className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-[#94d12b] to-[#7fb324] rounded-2xl flex items-center justify-center"
                   >
                     <reason.icon className="w-8 h-8 text-white" />
                   </motion.div>

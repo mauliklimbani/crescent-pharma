@@ -66,7 +66,7 @@ export default function FeaturedProducts() {
               <Card className="group hover:shadow-xl transition-all duration-300 h-full border-0 shadow-lg overflow-hidden">
                 <CardContent className="p-0 h-full">
                   {/* Header */}
-                  <div className="bg-gradient-to-r from-blue-500 to-blue-600 p-6 text-white">
+                  <div className="bg-gradient-to-r from-[#335588] to-[#002769] p-6 text-white">
                     <div className="flex items-center justify-between mb-4">
                       <Badge className="bg-white/20 text-white border-white/20">
                         {product.category}
@@ -74,7 +74,7 @@ export default function FeaturedProducts() {
                       <product.icon className="w-8 h-8" />
                     </div>
                     <h3 className="text-xl font-bold mb-2">{product.name}</h3>
-                    <p className="text-blue-100">{product.type}</p>
+                    <p className="text-[#ccd5e1]">{product.type}</p>
                   </div>
 
                   {/* Content */}
@@ -87,7 +87,7 @@ export default function FeaturedProducts() {
                     <div className="space-y-2 mb-6">
                       {product.features.map((feature, featureIndex) => (
                         <div key={featureIndex} className="flex items-center text-sm text-gray-600">
-                          <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                          <div className="w-2 h-2 bg-[#335588] rounded-full mr-3"></div>
                           {feature}
                         </div>
                       ))}
@@ -97,7 +97,7 @@ export default function FeaturedProducts() {
                     <Link href={createPageUrl("Products")}>
                       <Button 
                         variant="ghost" 
-                        className="w-full group-hover:bg-blue-50 group-hover:text-blue-600 bg-blue-50 transition-colors cursor-pointer text-blue-600"
+                        className="w-full group-hover:bg-[#e6eaf0] group-hover:text-[#002769] bg-[#e6eaf0] transition-colors cursor-pointer text-[#002769]"
                       >
                         View Details
                         <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -119,7 +119,7 @@ export default function FeaturedProducts() {
           className="text-center"
         >
           <Link href={createPageUrl("Products")}>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button size="lg" className="bg-[#002769] hover:bg-[#001f4d]">
               View All Products
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

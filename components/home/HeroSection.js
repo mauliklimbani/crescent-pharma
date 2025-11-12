@@ -8,7 +8,7 @@ import { ArrowRight, Play, Award, Globe, Users } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-blue-100 via-white to-blue-50 overflow-hidden">
+    <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-[#ccd5e1] via-white to-[#e6eaf0] overflow-hidden">
       {/* Decorative SVG background */}
       <div className="absolute inset-0 pointer-events-none z-0">
         <svg
@@ -80,7 +80,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mb-4 flex justify-center lg:justify-start"
             >
-              <Badge className="bg-blue-200 text-blue-900 font-semibold px-4 py-2 rounded-full shadow-sm text-sm sm:text-base">
+              <Badge className="bg-[#99b3cc] text-[#001732] font-semibold px-4 py-2 rounded-full shadow-sm text-sm sm:text-base">
                 Trusted by Pharma Leaders
               </Badge>
             </motion.div>
@@ -92,11 +92,11 @@ export default function HeroSection() {
               className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-5 leading-tight"
             >
               <span className="block">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#001f4d] to-[#4d6fa3]">
                   World-Class APIs
                 </span>
               </span>
-              <span className="block text-blue-900">
+              <span className="block text-[#001732]">
                 &amp; Intermediates
               </span>
             </motion.h1>
@@ -119,7 +119,7 @@ export default function HeroSection() {
               <Link href={createPageUrl("Products")}>
                 <Button
                   size="lg"
-                  className="bg-blue-700 cursor-pointer hover:bg-blue-800 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg flex items-center group w-full xs:w-auto"
+                  className="bg-[#001f4d] cursor-pointer hover:bg-[#001732] text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg flex items-center group w-full xs:w-auto"
                 >
                   Explore Products
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -129,7 +129,7 @@ export default function HeroSection() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-blue-700 text-blue-700 bg-blue-50 cursor-pointer font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center group w-full xs:w-auto"
+                  className="border-[#001f4d] text-[#001f4d] bg-[#e6eaf0] cursor-pointer font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center group w-full xs:w-auto"
                 >
                   <Play className="mr-2 w-5 h-5" />
                   Our Story
@@ -145,29 +145,29 @@ export default function HeroSection() {
               className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start items-center sm:items-stretch"
             >
               <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-0">
-                <span className="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-blue-100">
-                  <Award className="w-5 h-5 sm:w-6 sm:h-6 text-blue-700" />
+                <span className="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#ccd5e1]">
+                  <Award className="w-5 h-5 sm:w-6 sm:h-6 text-[#001f4d]" />
                 </span>
                 <div>
-                  <div className="text-base sm:text-lg font-bold text-blue-700">ISO 9001:2015</div>
+                  <div className="text-base sm:text-lg font-bold text-[#001f4d]">ISO 9001:2015</div>
                   <div className="text-xs text-gray-500">GMP Certified</div>
                 </div>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-0">
-                <span className="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-blue-100">
-                  <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-blue-700" />
+                <span className="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#ccd5e1]">
+                  <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-[#001f4d]" />
                 </span>
                 <div>
-                  <div className="text-base sm:text-lg font-bold text-blue-700">50+ Countries</div>
+                  <div className="text-base sm:text-lg font-bold text-[#001f4d]">50+ Countries</div>
                   <div className="text-xs text-gray-500">Global Reach</div>
                 </div>
               </div>
               <div className="flex items-center gap-2 sm:gap-3">
-                <span className="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-blue-100">
-                  <Users className="w-5 h-5 sm:w-6 sm:h-6 text-blue-700" />
+                <span className="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#ccd5e1]">
+                  <Users className="w-5 h-5 sm:w-6 sm:h-6 text-[#001f4d]" />
                 </span>
                 <div>
-                  <div className="text-base sm:text-lg font-bold text-blue-700">25+ Years</div>
+                  <div className="text-base sm:text-lg font-bold text-[#001f4d]">25+ Years</div>
                   <div className="text-xs text-gray-500">Experience</div>
                 </div>
               </div>
@@ -193,19 +193,19 @@ export default function HeroSection() {
                   repeat: Infinity,
                   repeatType: "reverse"
                 }}
-                className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl shadow-2xl flex flex-col justify-center items-center p-4 xs:p-6 sm:p-8"
+                className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#002769] to-[#001732] rounded-3xl shadow-2xl flex flex-col justify-center items-center p-4 xs:p-6 sm:p-8"
               >
-                <div className="w-16 h-16 xs:w-20 xs:h-20 sm:w-24 sm:h-24 rounded-full bg-white/20 flex items-center justify-center mb-4 xs:mb-6 shadow-lg">
+                <div className="w-16 h-16 xs:w-20 xs:h-20 sm:w-24 sm:h-24 rounded-full bg-white flex items-center justify-center mb-4 xs:mb-6 shadow-lg">
                   <img
-                    src="/images/hero-molecule.png"
+                    src="/logo.svg"
                     alt="API Molecule"
-                    className="w-10 h-10 xs:w-14 xs:h-14 sm:w-16 sm:h-16 object-contain"
+                    className="w-12 h-12 xs:w-14 xs:h-14 sm:w-20 sm:h-20 object-contain"
                   />
                 </div>
                 <div className="text-white text-lg xs:text-xl sm:text-2xl font-bold mb-1 xs:mb-2 text-center">
                   Science. Quality. Trust.
                 </div>
-                <div className="text-blue-100 text-xs xs:text-sm text-center max-w-xs">
+                <div className="text-[#ccd5e1] text-xs xs:text-sm text-center max-w-xs">
                   Advanced manufacturing for a healthier tomorrow.
                 </div>
               </motion.div>
@@ -216,7 +216,7 @@ export default function HeroSection() {
                   x: [0, 10, 0]
                 }}
                 transition={{ duration: 4, repeat: Infinity }}
-                className="absolute -top-6 -right-6 xs:-top-8 xs:-right-8 w-12 h-12 xs:w-16 xs:h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-200 to-blue-400 rounded-full shadow-lg flex items-center justify-center"
+                className="absolute -top-6 -right-6 xs:-top-8 xs:-right-8 w-12 h-12 xs:w-16 xs:h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#99b3cc] to-[#4d6fa3] rounded-full shadow-lg flex items-center justify-center"
               >
                 <div className="w-5 h-5 xs:w-7 xs:h-7 sm:w-8 sm:h-8 bg-white rounded-full shadow-inner"></div>
               </motion.div>
@@ -227,7 +227,7 @@ export default function HeroSection() {
                   x: [0, -8, 0]
                 }}
                 transition={{ duration: 5, repeat: Infinity }}
-                className="absolute -bottom-4 -left-4 xs:-bottom-6 xs:-left-6 w-9 h-9 xs:w-12 xs:h-12 sm:w-14 sm:h-14 bg-gradient-to-tr from-blue-300 to-blue-100 rounded-full shadow-md flex items-center justify-center"
+                className="absolute -bottom-4 -left-4 xs:-bottom-6 xs:-left-6 w-9 h-9 xs:w-12 xs:h-12 sm:w-14 sm:h-14 bg-gradient-to-tr from-[#80a0c0] to-[#ccd5e1] rounded-full shadow-md flex items-center justify-center"
               >
                 <div className="w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6 bg-white/80 rounded-full"></div>
               </motion.div>

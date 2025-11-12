@@ -71,7 +71,7 @@ export default function ResearchPage() {
 
       <div className="overflow-hidden">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-50 to-indigo-50 py-20">
+        <section className="bg-gradient-to-br from-[#e6eaf0] to-[#e6eaf0] py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -79,10 +79,10 @@ export default function ResearchPage() {
               transition={{ duration: 0.8 }}
               className="text-center"
             >
-              <Badge className="bg-blue-100 text-blue-800 mb-6">Research & Development</Badge>
+              <Badge className="bg-[#ccd5e1] text-[#001732] mb-6">Research & Development</Badge>
               <h1 className="text-5xl font-bold text-gray-900 mb-6">
                 Driving
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#002769] to-[#001732]">
                   {" "}Innovation
                 </span>
               </h1>
@@ -122,7 +122,7 @@ export default function ResearchPage() {
                 >
                   <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardContent className="p-8 text-center">
-                      <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center">
+                      <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-[#94d12b] to-[#7fb324] rounded-2xl flex items-center justify-center">
                         <area.icon className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-4">{area.title}</h3>
@@ -143,7 +143,7 @@ export default function ResearchPage() {
         </section>
 
         {/* Ongoing Projects */}
-        <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <section className="py-20 bg-gradient-to-br from-gray-50 to-[#e6eaf0]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -183,7 +183,7 @@ export default function ResearchPage() {
                               </div>
                               <div className="w-full bg-gray-200 rounded-full h-2">
                                 <div 
-                                  className="bg-blue-600 h-2 rounded-full transition-all duration-500"
+                                  className="bg-[#002769] h-2 rounded-full transition-all duration-500"
                                   style={{ width: `${project.progress}%` }}
                                 ></div>
                               </div>
@@ -272,7 +272,7 @@ export default function ResearchPage() {
                         />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                      <p className="text-blue-600 font-semibold mb-2">{member.role}</p>
+                      <p className="text-[#002769] font-semibold mb-2">{member.role}</p>
                       <p className="text-gray-600 text-sm mb-3">{member.expertise}</p>
                       <p className="text-gray-500 text-xs">{member.education}</p>
                     </CardContent>
@@ -284,7 +284,7 @@ export default function ResearchPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+        <section className="py-20 bg-gradient-to-r from-[#002769] to-[#001732]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -295,11 +295,11 @@ export default function ResearchPage() {
               <h2 className="text-4xl font-bold text-white mb-6">
                 Partner with Our Research Team
               </h2>
-              <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-[#ccd5e1] mb-8 max-w-2xl mx-auto">
                 Let&apos;s collaborate on innovative solutions that advance pharmaceutical manufacturing 
                 and improve patient care worldwide.
               </p>
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Button size="lg" className="bg-white text-[#002769] hover:bg-gray-100">
                 Start a Collaboration
               </Button>
             </motion.div>

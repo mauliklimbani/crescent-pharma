@@ -19,7 +19,7 @@ export default function AboutPage() {
 
       <div className="overflow-hidden">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-50 to-indigo-50 py-20">
+        <section className="bg-gradient-to-br from-[#e6eaf0] to-[#e6eaf0] py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -27,10 +27,10 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}
               className="text-center"
             >
-              <Badge className="bg-blue-100 text-blue-800 mb-6">About Vubrix Pharma</Badge>
+              <Badge className="bg-[#ccd5e1] text-[#001732] mb-6">About Vubrix Pharma</Badge>
               <h1 className="text-5xl font-bold text-gray-900 mb-6">
                 Leading the Future of 
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#002769] to-[#001732]">
                   {" "}Pharmaceutical Manufacturing
                 </span>
               </h1>
@@ -89,7 +89,7 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-6 shadow-lg">
-                  <div className="text-3xl font-bold text-blue-600">25+</div>
+                  <div className="text-3xl font-bold text-[#002769]">25+</div>
                   <div className="text-gray-600">Years of Excellence</div>
                 </div>
               </motion.div>
@@ -98,7 +98,7 @@ export default function AboutPage() {
         </section>
 
         {/* Mission & Vision */}
-        <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50" id="mission">
+        <section className="py-20 bg-gradient-to-br from-gray-50 to-[#e6eaf0]" id="mission">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -119,7 +119,7 @@ export default function AboutPage() {
               >
                 <Card className="h-full border-0 shadow-lg">
                   <CardContent className="p-8">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-[#94d12b] to-[#7fb324] rounded-2xl flex items-center justify-center mb-6">
                       <Target className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
@@ -140,7 +140,7 @@ export default function AboutPage() {
               >
                 <Card className="h-full border-0 shadow-lg">
                   <CardContent className="p-8">
-                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-[#94d12b] to-[#7fb324] rounded-2xl flex items-center justify-center mb-6">
                       <TrendingUp className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
@@ -214,8 +214,10 @@ export default function AboutPage() {
                 >
                   <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardContent className="p-8 text-center">
-                      <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center">
-                        <value.icon className="w-8 h-8 text-white" />
+                      <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center ${
+                        value.iconColor ? `bg-white border-2 border-[#94d12b]` : `bg-gradient-to-br from-[#94d12b] to-[#7fb324]`
+                      }`}>
+                        <value.icon className={`w-8 h-8 ${value.iconColor || 'text-white'}`} />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
                       <p className="text-gray-600">{value.description}</p>
@@ -228,7 +230,7 @@ export default function AboutPage() {
         </section>
 
         {/* Leadership Team */}
-        <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50" id="team">
+        <section className="py-20 bg-gradient-to-br from-gray-50 to-[#e6eaf0]" id="team">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -258,11 +260,11 @@ export default function AboutPage() {
                 >
                   <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardContent className="p-8 text-center">
-                      <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center">
+                      <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-[#94d12b] to-[#7fb324] rounded-2xl flex items-center justify-center">
                         <Users className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">{leader.name}</h3>
-                      <p className="text-blue-600 font-semibold">{leader.role}</p>
+                      <p className="text-[#002769] font-semibold">{leader.role}</p>
                     </CardContent>
                   </Card>
                 </motion.div>

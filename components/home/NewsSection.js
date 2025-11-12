@@ -84,7 +84,7 @@ export default function NewsSection() {
                   {/* Content */}
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-4">
-                      <Badge variant="secondary" className="bg-blue-100 text-blue-800">
+                      <Badge variant="secondary" className="bg-[#ccd5e1] text-[#001732]">
                         {item.category}
                       </Badge>
                       <div className="flex items-center text-sm text-gray-500">
@@ -93,7 +93,7 @@ export default function NewsSection() {
                       </div>
                     </div>
 
-                    <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
+                    <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#002769] transition-colors line-clamp-2">
                       {item.title}
                     </h3>
 
@@ -107,7 +107,7 @@ export default function NewsSection() {
                         {item.author}
                       </div>
                       <Link href={createPageUrl("News")}>
-                        <Button variant="ghost" size="sm" className="group-hover:text-blue-600">
+                        <Button variant="ghost" size="sm" className="group-hover:text-[#002769]">
                           Read More
                           <ArrowRight className="ml-1 w-3 h-3" />
                         </Button>

@@ -43,7 +43,7 @@ export default function ContactPage() {
 
       <div className="overflow-hidden">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-50 to-indigo-50 py-20">
+        <section className="bg-gradient-to-br from-[#e6eaf0] to-[#e6eaf0] py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -51,10 +51,10 @@ export default function ContactPage() {
               transition={{ duration: 0.8 }}
               className="text-center"
             >
-              <Badge className="bg-blue-100 text-blue-800 mb-6">Contact Us</Badge>
+              <Badge className="bg-[#ccd5e1] text-[#001732] mb-6">Contact Us</Badge>
               <h1 className="text-5xl font-bold text-gray-900 mb-6">
                 Let&apos;s Discuss Your
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#002769] to-[#001732]">
                   {" "}Requirements
                 </span>
               </h1>
@@ -82,18 +82,17 @@ export default function ContactPage() {
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#335588] to-[#002769] rounded-xl flex items-center justify-center flex-shrink-0">
                       <Phone className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
-                      <p className="text-gray-600">+1 (555) 123-4568</p>
+                      <p className="text-gray-600">+91 9924122251</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#94d12b] to-[#7fb324] rounded-xl flex items-center justify-center flex-shrink-0">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -103,15 +102,16 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#94d12b] to-[#7fb324] rounded-xl flex items-center justify-center flex-shrink-0">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Address</h3>
                       <p className="text-gray-600">
-                        123 Pharma Drive<br />
-                        Industrial Park, NY 10001<br />
-                        United States
+                        PLOT 51 SNEHMUDRA SOC<br />
+                        N/R KAPODRA CHAR RASTA<br />
+                        SURAT, GUJARAT<br />
+                        INDIA
                       </p>
                     </div>
                   </div>
@@ -147,7 +147,7 @@ export default function ContactPage() {
                         animate={{ opacity: 1, scale: 1 }}
                         className="text-center py-8"
                       >
-                        <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+                        <CheckCircle className="w-16 h-16 text-[#94d12b] mx-auto mb-4" />
                         <h4 className="text-xl font-semibold text-gray-900 mb-2">Message Sent!</h4>
                         <p className="text-gray-600">Thank you for contacting us. We&apos;ll get back to you within 24 hours.</p>
                       </motion.div>
@@ -165,7 +165,7 @@ export default function ContactPage() {
                               required
                               value={formData.name}
                               onChange={handleChange}
-                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                               placeholder="Enter your full name"
                             />
                           </div>
@@ -181,7 +181,7 @@ export default function ContactPage() {
                               required
                               value={formData.email}
                               onChange={handleChange}
-                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                               placeholder="Enter your email"
                             />
                           </div>
@@ -198,7 +198,7 @@ export default function ContactPage() {
                               name="company"
                               value={formData.company}
                               onChange={handleChange}
-                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                               placeholder="Enter your company name"
                             />
                           </div>
@@ -213,7 +213,7 @@ export default function ContactPage() {
                               name="phone"
                               value={formData.phone}
                               onChange={handleChange}
-                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                               placeholder="Enter your phone number"
                             />
                           </div>
@@ -228,7 +228,7 @@ export default function ContactPage() {
                             name="productInterest"
                             value={formData.productInterest}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                           >
                             <option value="">Select your area of interest</option>
                             <option value="apis">APIs</option>
@@ -250,12 +250,12 @@ export default function ContactPage() {
                             rows={5}
                             value={formData.message}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                             placeholder="Tell us about your requirements..."
                           />
                         </div>
 
-                        <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3">
+                        <Button type="submit" className="w-full bg-[#002769] hover:bg-[#001f4d] text-white py-3">
                           <Send className="w-5 h-5 mr-2" />
                           Send Message
                         </Button>

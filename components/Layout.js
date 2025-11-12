@@ -82,12 +82,14 @@ export default function Layout({ children, currentPageName }) {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">V</span>
-                </div>
+                <img 
+                  src="/logo.svg" 
+                  alt="Vubrix Pharma Logo" 
+                  className="h-16 w-auto"
+                />
                 <div>
                   <h1 className="text-xl font-bold text-gray-900">Vubrix Pharma</h1>
-                  <p className="text-xs text-blue-600 font-medium">APIs & Intermediates</p>
+                  <p className="text-xs text-[#002769] font-medium">APIs & Intermediates</p>
                 </div>
               </motion.div>
             </Link>
@@ -98,7 +100,7 @@ export default function Layout({ children, currentPageName }) {
                 <div key={item.name} className="relative group">
                   {item.dropdown ? (
                     <div className="relative">
-                      <button className="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                      <button className="flex items-center text-gray-700 hover:text-[#002769] font-medium transition-colors duration-200">
                         {item.name}
                         <ChevronDown className="ml-1 w-4 h-4" />
                       </button>
@@ -108,7 +110,7 @@ export default function Layout({ children, currentPageName }) {
                             <Link
                               key={dropItem.name}
                               href={dropItem.href}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#e6eaf0] hover:text-[#002769] transition-colors duration-200"
                             >
                               {dropItem.name}
                             </Link>
@@ -119,8 +121,8 @@ export default function Layout({ children, currentPageName }) {
                   ) : (
                     <Link
                       href={item.href}
-                      className={`text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 ${
-                        router.pathname === item.href ? "text-blue-600" : ""
+                      className={`text-gray-700 hover:text-[#002769] font-medium transition-colors duration-200 ${
+                        router.pathname === item.href ? "text-[#002769]" : ""
                       }`}
                     >
                       {item.name}
@@ -133,7 +135,7 @@ export default function Layout({ children, currentPageName }) {
             {/* CTA Button */}
             <div className="hidden lg:flex items-center space-x-4">
               <Link href={createPageUrl("Contact")}>
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Button className="bg-[#002769] hover:bg-[#001f4d] text-white">
                   Get Quote
                 </Button>
               </Link>
@@ -163,7 +165,7 @@ export default function Layout({ children, currentPageName }) {
                   <div key={item.name}>
                     <Link
                       href={item.href}
-                      className="block py-2 text-gray-700 hover:text-blue-600 font-medium"
+                      className="block py-2 text-gray-700 hover:text-[#002769] font-medium"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {item.name}
@@ -174,7 +176,7 @@ export default function Layout({ children, currentPageName }) {
                           <Link
                             key={dropItem.name}
                             href={dropItem.href}
-                            className="block py-1 text-sm text-gray-600 hover:text-blue-600"
+                            className="block py-1 text-sm text-gray-600 hover:text-[#002769]"
                             onClick={() => setIsMenuOpen(false)}
                           >
                             {dropItem.name}
@@ -203,32 +205,34 @@ export default function Layout({ children, currentPageName }) {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white">
+      <footer className="bg-gradient-to-br from-[#e6eaf0] to-[#e6eaf0] border-t border-gray-200 text-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">C</span>
-                </div>
+                <img 
+                  src="/logo.svg" 
+                  alt="Vubrix Pharma Logo" 
+                  className="h-16 w-auto"
+                />
                 <div>
                   <h3 className="text-xl font-bold">Vubrix Pharma</h3>
-                  <p className="text-blue-400 text-sm font-medium">APIs & Intermediates</p>
+                  <p className="text-[#002769] text-sm font-medium">APIs & Intermediates</p>
                 </div>
               </div>
-              <p className="text-gray-300 mb-6 max-w-md">
+              <p className="text-gray-600 mb-6 max-w-md">
                 Leading manufacturer of high-quality Active Pharmaceutical Ingredients and Intermediates, 
                 serving the global pharmaceutical industry with innovation and excellence.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <a href="#" className="text-gray-600 hover:text-[#94d12b] transition-colors">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <a href="#" className="text-gray-600 hover:text-[#94d12b] transition-colors">
                   <Twitter className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <a href="#" className="text-gray-600 hover:text-[#94d12b] transition-colors">
                   <Facebook className="w-5 h-5" />
                 </a>
               </div>
@@ -242,7 +246,7 @@ export default function Layout({ children, currentPageName }) {
                   <li key={item.name}>
                     <Link 
                       href={item.href} 
-                      className="text-gray-300 hover:text-blue-400 transition-colors"
+                      className="text-gray-700 hover:text-[#94d12b] transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -256,18 +260,20 @@ export default function Layout({ children, currentPageName }) {
               <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-blue-400" />
-                  <span className="text-gray-300">+1 (555) 123-4567</span>
+                  <Phone className="w-5 h-5 text-[#002769]" />
+                  <span className="text-gray-700">+91 9924122251</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-blue-400" />
-                  <span className="text-gray-300">support@vubrixpharma.com</span>
+                  <Mail className="w-5 h-5 text-[#002769]" />
+                  <span className="text-gray-700">support@vubrixpharma.com</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-blue-400 mt-1" />
-                  <span className="text-gray-300">
-                    123 Pharma Drive<br />
-                    Industrial Park, NY 10001
+                  <MapPin className="w-5 h-5 text-[#002769] mt-1" />
+                  <span className="text-gray-700">
+                    PLOT 51 SNEHMUDRA SOC<br />
+                    N/R KAPODRA CHAR RASTA<br />
+                    SURAT, GUJARAT<br />
+                    INDIA
                   </span>
                 </div>
               </div>
@@ -275,29 +281,29 @@ export default function Layout({ children, currentPageName }) {
           </div>
 
           {/* Bottom Bar */}
-          <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
+          <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-600 text-sm">
               © 2024 Vubrix Pharma. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">
+              <a href="#" className="text-gray-600 hover:text-[#94d12b] text-sm transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">
+              <a href="#" className="text-gray-600 hover:text-[#94d12b] text-sm transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">
+              <a href="#" className="text-gray-600 hover:text-[#94d12b] text-sm transition-colors">
                 Quality Policy
               </a>
             </div>
           </div>
-          <div className="mt-4 text-center text-gray-400 text-sm font-medium text-white">
+          <div className="mt-4 text-center text-gray-600 text-sm font-medium">
             Developed by:{" "}
             <a
               href="https://www.linkedin.com/in/maulik-limbani/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 hover:underline"
+              className="text-[#002769] hover:underline"
             >
               maulik limbani
             </a>

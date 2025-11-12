@@ -11,28 +11,28 @@ const services = [
     icon: Beaker,
     title: "API Manufacturing",
     description: "High-quality Active Pharmaceutical Ingredients manufactured under strict GMP conditions.",
-    color: "from-blue-500 to-blue-600",
+    color: "from-[#94d12b] to-[#7fb324]",
     link: createPageUrl("Products") + "#apis"
   },
   {
     icon: Factory,
     title: "Intermediates",
     description: "Pharmaceutical intermediates and building blocks for complex drug synthesis.",
-    color: "from-purple-500 to-purple-600",
+    color: "from-[#94d12b] to-[#7fb324]",
     link: createPageUrl("Products") + "#intermediates"
   },
   {
     icon: Microscope,
     title: "Custom Synthesis",
     description: "Tailored synthesis solutions for unique pharmaceutical requirements.",
-    color: "from-emerald-500 to-emerald-600",
+    color: "from-[#94d12b] to-[#7fb324]",
     link: createPageUrl("Products") + "#custom"
   },
   {
     icon: Shield,
     title: "Quality Assurance",
     description: "Comprehensive quality control and regulatory compliance services.",
-    color: "from-orange-500 to-orange-600",
+    color: "from-[#94d12b] to-[#7fb324]",
     link: createPageUrl("Quality")
   }
 ];
@@ -87,7 +87,7 @@ export default function ServicesOverview() {
                   <Link href={service.link}>
                     <Button 
                       variant="ghost" 
-                      className="group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors cursor-pointer text-blue-600"
+                      className="group-hover:bg-[#e6eaf0] group-hover:text-[#002769] transition-colors cursor-pointer text-[#002769]"
                     >
                       Learn More
                       <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

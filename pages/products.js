@@ -94,7 +94,7 @@ export default function ProductsPage() {
 
       <div className="overflow-hidden">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-50 to-indigo-50 py-20">
+        <section className="bg-gradient-to-br from-[#e6eaf0] to-[#e6eaf0] py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -102,10 +102,10 @@ export default function ProductsPage() {
               transition={{ duration: 0.8 }}
               className="text-center"
             >
-              <Badge className="bg-blue-100 text-blue-800 mb-6">Our Products</Badge>
+              <Badge className="bg-[#ccd5e1] text-[#001732] mb-6">Our Products</Badge>
               <h1 className="text-5xl font-bold text-gray-900 mb-6">
                 Premium
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#002769] to-[#001732]">
                   {" "}APIs & Intermediates
                 </span>
               </h1>
@@ -129,7 +129,7 @@ export default function ProductsPage() {
                   placeholder="Search products..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                 />
               </div>
 
@@ -141,7 +141,7 @@ export default function ProductsPage() {
                     onClick={() => setSelectedCategory(category.id)}
                     className={`flex items-center gap-2 px-4 py-2 rounded-lg border transition-colors ${
                       selectedCategory === category.id
-                        ? "bg-blue-600 text-white border-blue-600"
+                        ? "bg-[#002769] text-white border-[#002769]"
                         : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
                     }`}
                   >
@@ -192,13 +192,13 @@ export default function ProductsPage() {
                         {/* Content */}
                         <div className="p-6">
                           <div className="flex items-center justify-between mb-4">
-                            <Badge className="bg-blue-100 text-blue-800">
+                            <Badge className="bg-[#ccd5e1] text-[#001732]">
                               {product.type}
                             </Badge>
-                            <Shield className="w-5 h-5 text-green-500" />
+                            <Shield className="w-5 h-5 text-[#94d12b]" />
                           </div>
 
-                          <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                          <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#002769] transition-colors">
                             {product.name}
                           </h3>
 
@@ -210,7 +210,7 @@ export default function ProductsPage() {
                           <div className="space-y-2 mb-6">
                             {product.features.map((feature, featureIndex) => (
                               <div key={featureIndex} className="flex items-center text-sm text-gray-600">
-                                <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                                <div className="w-2 h-2 bg-[#335588] rounded-full mr-3"></div>
                                 {feature}
                               </div>
                             ))}
@@ -219,7 +219,7 @@ export default function ProductsPage() {
                           {/* CTA */}
                           <Button 
                             variant="ghost" 
-                            className="w-full group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors"
+                            className="w-full group-hover:bg-[#e6eaf0] group-hover:text-[#002769] transition-colors"
                           >
                             View Details
                             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -235,7 +235,7 @@ export default function ProductsPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+        <section className="py-20 bg-gradient-to-r from-[#002769] to-[#001732]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -246,10 +246,10 @@ export default function ProductsPage() {
               <h2 className="text-4xl font-bold text-white mb-6">
                 Need a Custom Solution?
               </h2>
-              <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-[#ccd5e1] mb-8 max-w-2xl mx-auto">
                 Our team of experts can develop custom synthesis solutions tailored to your specific requirements.
               </p>
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Button size="lg" className="bg-white text-[#002769] hover:bg-gray-100">
                 Contact Our Team
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

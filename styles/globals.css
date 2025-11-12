@@ -10,6 +10,24 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Custom Brand Colors */
+  --color-brand-blue: #002769;
+  --color-brand-green: #94d12b;
+  
+  /* Blue shades for theme */
+  --color-blue-50: #e6eaf0;
+  --color-blue-100: #ccd5e1;
+  --color-blue-400: #4d6fa3;
+  --color-blue-500: #335588;
+  --color-blue-600: #002769;
+  --color-blue-700: #001f4d;
+  --color-blue-800: #001732;
+  
+  /* Green shades for theme */
+  --color-green-400: #a8d84f;
+  --color-green-500: #94d12b;
+  --color-green-600: #7fb324;
 }
 
 @media (prefers-color-scheme: dark) {

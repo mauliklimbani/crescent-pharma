@@ -67,7 +67,7 @@ export default function CareersPage() {
       </Head>
 
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="relative bg-gradient-to-br from-[#002769] to-[#001732] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -80,19 +80,19 @@ export default function CareersPage() {
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4">
               Build the future of pharmaceuticals with us
             </h1>
-            <p className="text-blue-100 text-lg mb-8">
+            <p className="text-[#ccd5e1] text-lg mb-8">
               Join a mission-driven team crafting high-quality APIs and intermediates that power
               breakthrough therapies worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#openings">
-                <Button size="lg" className="bg-white text-blue-700 hover:bg-gray-100">
+                <Button size="lg" className="bg-white text-[#001f4d] hover:bg-gray-100">
                   View Open Roles
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </a>
               <a href="#culture">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-700">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#001f4d]">
                   Life at Vubrix Pharma
                 </Button>
               </a>
@@ -123,7 +123,7 @@ export default function CareersPage() {
             viewport={{ once: true }}
             className="mb-10 text-center"
           >
-            <Badge className="bg-blue-100 text-blue-700 border-blue-200 mb-3">Benefits</Badge>
+            <Badge className="bg-[#94d12b] text-white border-[#94d12b] mb-3">Benefits</Badge>
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Perks that support you</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">We invest in your wellbeing, growth, and long-term success.</p>
           </motion.div>
@@ -133,7 +133,7 @@ export default function CareersPage() {
               <Card key={b.title} className="h-full">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <b.icon className="w-6 h-6 text-blue-600" />
+                    <b.icon className="w-6 h-6 text-[#94d12b]" />
                     <h3 className="font-semibold text-gray-900">{b.title}</h3>
                   </div>
                   <p className="text-gray-600">{b.desc}</p>
@@ -154,16 +154,16 @@ export default function CareersPage() {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <Badge className="bg-blue-100 text-blue-700 border-blue-200 mb-3">Culture</Badge>
+              <Badge className="bg-[#94d12b] text-white border-[#94d12b] mb-3">Culture</Badge>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Life at Vubrix Pharma</h2>
               <p className="text-gray-600 mb-6">
                 We’re scientists, engineers, and operators united by a mission to improve
                 patient outcomes. We celebrate curiosity, craftsmanship, and collaboration.
               </p>
               <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-3"><Users className="w-5 h-5 text-blue-600 mt-1" /> Cross-functional squads and mentorship</li>
-                <li className="flex items-start gap-3"><Building2 className="w-5 h-5 text-blue-600 mt-1" /> Modern facilities with safety-first design</li>
-                <li className="flex items-start gap-3"><Globe className="w-5 h-5 text-blue-600 mt-1" /> Global customers and real-world impact</li>
+                <li className="flex items-start gap-3"><Users className="w-5 h-5 text-[#002769] mt-1" /> Cross-functional squads and mentorship</li>
+                <li className="flex items-start gap-3"><Building2 className="w-5 h-5 text-[#002769] mt-1" /> Modern facilities with safety-first design</li>
+                <li className="flex items-start gap-3"><Globe className="w-5 h-5 text-[#002769] mt-1" /> Global customers and real-world impact</li>
               </ul>
               <div className="mt-6 flex gap-3">
                 <a href="#benefits"><Button variant="outline">See Benefits</Button></a>
@@ -185,7 +185,7 @@ export default function CareersPage() {
                   { icon: ShieldCheck, label: "Safety First" }
                 ].map((i) => (
                   <div key={i.label} className="flex items-center gap-3 p-4 rounded-lg border bg-white">
-                    <i.icon className="w-6 h-6 text-blue-600" />
+                    <i.icon className="w-6 h-6 text-[#94d12b]" />
                     <span className="font-medium text-gray-900">{i.label}</span>
                   </div>
                 ))}
@@ -205,7 +205,7 @@ export default function CareersPage() {
             viewport={{ once: true }}
             className="mb-10 text-center"
           >
-            <Badge className="bg-blue-100 text-blue-700 border-blue-200 mb-3">Open Roles</Badge>
+            <Badge className="bg-[#94d12b] text-white border-[#94d12b] mb-3">Open Roles</Badge>
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Join the team</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Don’t see a fit? Reach out via our contact page.</p>
           </motion.div>
@@ -235,7 +235,7 @@ export default function CareersPage() {
           </div>
 
           <div id="apply" className="mt-10 text-center">
-            <p className="text-gray-700 mb-4">Prefer email? Send your CV to <a className="text-blue-600 underline" href="mailto:support@vubrixpharma.com">support@vubrixpharma.com</a></p>
+            <p className="text-gray-700 mb-4">Prefer email? Send your CV to <a className="text-[#002769] underline" href="mailto:support@vubrixpharma.com">support@vubrixpharma.com</a></p>
             <Link href={createPageUrl("Contact")}>
               <Button variant="outline">Contact HR</Button>
             </Link>

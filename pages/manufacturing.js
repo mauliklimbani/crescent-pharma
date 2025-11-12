@@ -65,7 +65,7 @@ export default function ManufacturingPage() {
 
       <div className="overflow-hidden">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-50 to-indigo-50 py-20">
+        <section className="bg-gradient-to-br from-[#e6eaf0] to-[#e6eaf0] py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -73,10 +73,10 @@ export default function ManufacturingPage() {
               transition={{ duration: 0.8 }}
               className="text-center"
             >
-              <Badge className="bg-blue-100 text-blue-800 mb-6">Manufacturing</Badge>
+              <Badge className="bg-[#ccd5e1] text-[#001732] mb-6">Manufacturing</Badge>
               <h1 className="text-5xl font-bold text-gray-900 mb-6">
                 World-Class
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#002769] to-[#001732]">
                   {" "}Manufacturing
                 </span>
               </h1>
@@ -116,7 +116,7 @@ export default function ManufacturingPage() {
                 >
                   <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardContent className="p-8 text-center">
-                      <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center">
+                      <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-[#94d12b] to-[#7fb324] rounded-2xl flex items-center justify-center">
                         <capability.icon className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-4">{capability.title}</h3>
@@ -137,7 +137,7 @@ export default function ManufacturingPage() {
         </section>
 
         {/* Manufacturing Process */}
-        <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <section className="py-20 bg-gradient-to-br from-gray-50 to-[#e6eaf0]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -171,15 +171,15 @@ export default function ManufacturingPage() {
                           <div className="space-y-3">
                             {process.steps.map((step, stepIndex) => (
                               <div key={stepIndex} className="flex items-center">
-                                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                  <span className="text-blue-600 font-semibold text-sm">{stepIndex + 1}</span>
+                                <div className="w-8 h-8 bg-[#ccd5e1] rounded-full flex items-center justify-center mr-3">
+                                  <span className="text-[#002769] font-semibold text-sm">{stepIndex + 1}</span>
                                 </div>
                                 <span className="text-gray-700">{step}</span>
                               </div>
                             ))}
                           </div>
                         </div>
-                        <div className="relative h-64 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center">
+                        <div className="relative h-64 bg-gradient-to-br from-[#335588] to-[#002769] rounded-2xl flex items-center justify-center">
                           <Beaker className="w-24 h-24 text-white opacity-80" />
                         </div>
                       </div>
@@ -234,7 +234,7 @@ export default function ManufacturingPage() {
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-6 shadow-lg">
-                  <div className="text-3xl font-bold text-blue-600">99.9%</div>
+                  <div className="text-3xl font-bold text-[#002769]">99.9%</div>
                   <div className="text-gray-600">Quality Rate</div>
                 </div>
               </motion.div>
@@ -243,7 +243,7 @@ export default function ManufacturingPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+        <section className="py-20 bg-gradient-to-r from-[#002769] to-[#001732]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -254,10 +254,10 @@ export default function ManufacturingPage() {
               <h2 className="text-4xl font-bold text-white mb-6">
                 Ready to Partner with Us?
               </h2>
-              <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-[#ccd5e1] mb-8 max-w-2xl mx-auto">
                 Let&apos;s discuss how our manufacturing capabilities can meet your pharmaceutical needs.
               </p>
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Button size="lg" className="bg-white text-[#002769] hover:bg-gray-100">
                 Get a Quote
               </Button>
             </motion.div>

@@ -57,7 +57,7 @@ export default function HomePage() {
         <NewsSection />
 
         {/* CTA Section */}
-        <section className="bg-gradient-to-r from-blue-600 to-blue-800 py-20">
+        <section className="bg-gradient-to-r from-[#002769] to-[#001732] py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -68,13 +68,13 @@ export default function HomePage() {
               <h2 className="text-4xl font-bold text-white mb-6">
                 Ready to Partner with Us?
               </h2>
-              <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-[#ccd5e1] mb-8 max-w-2xl mx-auto">
                 Let&apos;s discuss your API and intermediate requirements. Our team is ready to provide 
                 you with high-quality solutions tailored to your needs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href={createPageUrl("Contact")}>
-                  <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+                  <Button size="lg" className="bg-white text-[#002769] hover:bg-gray-100">
                     Get a Quote
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
@@ -83,7 +83,7 @@ export default function HomePage() {
                   <Button 
                     size="lg" 
                     variant="outline" 
-                    className="border-white text-white hover:bg-white hover:text-blue-600"
+                    className="border-white text-white hover:bg-white hover:text-[#002769]"
                   >
                     View Products
                   </Button>
