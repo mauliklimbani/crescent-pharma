@@ -179,7 +179,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="w-full lg:w-1/2 flex justify-center items-center relative mb-8 lg:mb-0"
+            className="w-full max-lg:mt-10 lg:w-1/2 flex justify-center items-center relative mb-8 lg:mb-0"
           >
             <div className="relative w-[220px] h-[270px] xs:w-[280px] xs:h-[340px] sm:w-[340px] sm:h-[420px] md:w-[400px] md:h-[480px] mx-auto">
               {/* Main card */}
