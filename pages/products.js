@@ -22,60 +22,25 @@ export default function ProductsPage() {
   const products = [
     {
       id: 1,
-      name: "Atorvastatin Calcium",
+      name: "Aripiprazole",
       category: "apis",
       type: "API",
-      description: "High-purity statin for cholesterol management",
-      features: ["USP/EP Compliant", "DMF Filed", "GMP Certified"],
+      description: "Antipsychotic used for the treatment of schizophrenia and bipolar disorder.",
+      features: ["CAS No.: 126722-12-6", "End Application: Antipsychotic"],
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400"
     },
     {
       id: 2,
-      name: "Amoxicillin Trihydrate",
+      name: "Fluconazole",
       category: "apis",
       type: "API",
-      description: "Beta-lactam antibiotic with proven efficacy",
-      features: ["WHO Prequalified", "Multiple Patents", "Global Supply"],
+      description: "Broad-spectrum antifungal used for the treatment of fungal infections.",
+      features: ["CAS No.: 86386-73-4", "End Application: Antifungal"],
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400"
     },
+    // All intermediates below retained as-is:
     {
       id: 3,
-      name: "Benzyl Penicillin",
-      category: "intermediates",
-      type: "Intermediate",
-      description: "Key intermediate for beta-lactam synthesis",
-      features: ["High Yield Process", "Cost Effective", "Scalable"],
-      image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
-    },
-    {
-      id: 4,
-      name: "Metformin Hydrochloride",
-      category: "apis",
-      type: "API",
-      description: "First-line treatment for type 2 diabetes",
-      features: ["USP/EP Compliant", "DMF Filed", "GMP Certified"],
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400"
-    },
-    {
-      id: 5,
-      name: "Ibuprofen",
-      category: "apis",
-      type: "API",
-      description: "Non-steroidal anti-inflammatory drug",
-      features: ["USP/EP Compliant", "DMF Filed", "GMP Certified"],
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400"
-    },
-    {
-      id: 6,
-      name: "Paracetamol",
-      category: "apis",
-      type: "API",
-      description: "Analgesic and antipyretic medication",
-      features: ["USP/EP Compliant", "DMF Filed", "GMP Certified"],
-      image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
-    },
-    {
-      id: 7,
       name: "7-Hydroxy-3,4-dihydro-2(1H)-quinolinone",
       category: "intermediates",
       type: "Intermediate",
@@ -84,7 +49,7 @@ export default function ProductsPage() {
       image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
     },
     {
-      id: 8,
+      id: 4,
       name: "7-(4-Chlorobutoxy)-3,4-dihydro-2(1H)-quinolinone",
       category: "intermediates",
       type: "Intermediate",
@@ -93,7 +58,7 @@ export default function ProductsPage() {
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400"
     },
     {
-      id: 9,
+      id: 5,
       name: "1-(2,3-Dichlorophenyl)piperazine hydrochloride",
       category: "intermediates",
       type: "Intermediate",
@@ -102,7 +67,7 @@ export default function ProductsPage() {
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400"
     },
     {
-      id: 10,
+      id: 6,
       name: "6-Hydroxy-2(1H)-3,4-dihydroquinolinone",
       category: "intermediates",
       type: "Intermediate",
@@ -111,7 +76,7 @@ export default function ProductsPage() {
       image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
     },
     {
-      id: 11,
+      id: 7,
       name: "5-(4-Chlorobutyl)-1-cyclohexanyl tetrazole",
       category: "intermediates",
       type: "Intermediate",
@@ -120,7 +85,7 @@ export default function ProductsPage() {
       image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
     },
     {
-      id: 12,
+      id: 8,
       name: "1-Acetyl-4-(4-Hydroxyphenyl) Piperazine",
       category: "intermediates",
       type: "Intermediate",
@@ -129,7 +94,7 @@ export default function ProductsPage() {
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400"
     },
     {
-      id: 13,
+      id: 9,
       name: "Cis Tosylate",
       category: "intermediates",
       type: "Intermediate",
@@ -138,7 +103,7 @@ export default function ProductsPage() {
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400"
     },
     {
-      id: 14,
+      id: 10,
       name: "Cis Mesylate",
       category: "intermediates",
       type: "Intermediate",
@@ -147,7 +112,7 @@ export default function ProductsPage() {
       image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
     },
     {
-      id: 15,
+      id: 11,
       name: "(S)-1-(2-Chloroacetyl)pyrrolidine-2-carbonitrile",
       category: "intermediates",
       type: "Intermediate",
@@ -156,7 +121,7 @@ export default function ProductsPage() {
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400"
     },
     {
-      id: 16,
+      id: 12,
       name: "3-Amino-1-adamantanol",
       category: "intermediates",
       type: "Intermediate",
@@ -165,7 +130,7 @@ export default function ProductsPage() {
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400"
     },
     {
-      id: 17,
+      id: 13,
       name: "1-Bromo-2,4-difluorobenzene",
       category: "intermediates",
       type: "Intermediate",
@@ -174,7 +139,7 @@ export default function ProductsPage() {
       image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
     },
     {
-      id: 18,
+      id: 14,
       name: "1-(3-Chlorophenyl)-4-(3-chloropropyl)piperazine hydrochloride",
       category: "intermediates",
       type: "Intermediate",
@@ -183,7 +148,7 @@ export default function ProductsPage() {
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400"
     },
     {
-      id: 19,
+      id: 15,
       name: "1-Bromo-2-Nitrobenzene",
       category: "intermediates",
       type: "Intermediate",
